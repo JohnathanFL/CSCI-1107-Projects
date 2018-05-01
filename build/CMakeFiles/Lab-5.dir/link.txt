@@ -1,0 +1,1 @@
+/usr/bin/g++  -g   CMakeFiles/Lab-5.dir/Source/Lab-5/Lab5-Prob3.cpp.o CMakeFiles/Lab-5.dir/Source/Lab-5/vectorlab.cpp.o  -o Lab-5 

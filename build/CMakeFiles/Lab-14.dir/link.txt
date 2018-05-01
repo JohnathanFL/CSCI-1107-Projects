@@ -1,0 +1,1 @@
+/usr/bin/g++  -g   CMakeFiles/Lab-14.dir/Source/Lab-14/Project-10.1.cpp.o  -o Lab-14 

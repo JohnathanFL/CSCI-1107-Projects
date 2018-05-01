@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/oakenbow/Dev/Projects/CSCI-1107-Projects/Source/Project-2.2/Project-2.2.cpp
+stdlib.h
+-
+fstream
+-
+iomanip
+-
+iostream
+-
+string
+-
+Rock.h
+/home/oakenbow/Dev/Projects/CSCI-1107-Projects/Source/Project-2.2/Rock.h
+
+/home/oakenbow/Dev/Projects/CSCI-1107-Projects/Source/Project-2.2/Rock.cpp
+Rock.h
+/home/oakenbow/Dev/Projects/CSCI-1107-Projects/Source/Project-2.2/Rock.h
+iostream
+-
+
+/home/oakenbow/Dev/Projects/CSCI-1107-Projects/Source/Project-2.2/Rock.h
+string
+-
+

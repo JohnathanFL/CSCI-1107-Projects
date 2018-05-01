@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/oakenbow/Dev/Projects/CSCI-1107-Projects/Source/Lab-5/Lab5-Prob3.cpp
+iostream
+-
+
+/home/oakenbow/Dev/Projects/CSCI-1107-Projects/Source/Lab-5/vectorlab.cpp
+iostream
+-
+vector
+-
+

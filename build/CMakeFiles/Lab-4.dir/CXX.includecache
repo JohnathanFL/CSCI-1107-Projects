@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/oakenbow/Dev/Projects/CSCI-1107-Projects/Source/Lab-4/Rock.cpp
+Rock.h
+/home/oakenbow/Dev/Projects/CSCI-1107-Projects/Source/Lab-4/Rock.h
+iostream
+-
+
+/home/oakenbow/Dev/Projects/CSCI-1107-Projects/Source/Lab-4/Rock.h
+string
+-
+
+/home/oakenbow/Dev/Projects/CSCI-1107-Projects/Source/Lab-4/geology.cpp
+fstream
+-
+iomanip
+-
+iostream
+-
+Rock.h
+/home/oakenbow/Dev/Projects/CSCI-1107-Projects/Source/Lab-4/Rock.h
+

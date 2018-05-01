@@ -1,0 +1,40 @@
+/// \file Project-5.2.cpp
+/// \author Johnathan Lee for CSCI 1107, Lab 13
+/// \brief Test driver for HashTable class.
+
+#include <iostream>
+#include <sstream>
+
+#include "HashTable.h"
+
+using namespace std;
+
+int main() {
+   string testText =
+       // With full formatting!
+       "DEAR MARLIN\n"
+       "THE AARDVARKS AND THE CAMELS WERE MISTAKENLY SHIPPED TO "
+       "THE AZORES\n"
+       "SORRY ABOUT THAT\n"
+       "SINCERELY JIM\n"
+       "PS  ANTS AND BATS AND COWS AND CATS ARE ANIMALS\n"
+       "COWS ARE BIG BUT ANTS ARE SMALL AND BATS AND CATS ARE IN BETWEEN";
+
+   HashTable table(11);
+
+   string   buff;
+   unsigned numStrings = 0;
+
+   cout << "How many strings do you want to enter? ";
+   cin >> numStrings;
+   cout << "Alright, enter " << numStrings << " strings: ";
+
+
+   for (int i = 0; i < numStrings; i++) {
+      cin >> buff;
+      table.insert(buff);
+   }
+   table.display(cout);
+
+   return 0;
+}

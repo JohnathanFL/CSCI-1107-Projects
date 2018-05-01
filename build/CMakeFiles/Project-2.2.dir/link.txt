@@ -1,0 +1,1 @@
+/usr/bin/g++  -g   CMakeFiles/Project-2.2.dir/Source/Project-2.2/Project-2.2.cpp.o CMakeFiles/Project-2.2.dir/Source/Project-2.2/Rock.cpp.o  -o Project-2.2 

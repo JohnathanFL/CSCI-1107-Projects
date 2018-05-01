@@ -1,0 +1,61 @@
+/// \file gcd.cpp
+/// \author Johnathan Lee for CSCI 1107, Lab 13
+/// \brief Euclidean function for greatest common divisor.
+#include <cassert>
+#include <iostream>
+
+using namespace std;
+
+/// \brief Recursively calculate the GCD of 2 numbers
+/// \param a The first number
+/// \param b The second number
+/// \returns The GCD of a and b
+int recGCD(int a, int b);
+
+/// \brief Iteratively calculate the GCD of 2 numbers
+/// \param a The first number
+/// \param b The second number
+/// \returns The GCD of a and b
+int iterGCD(int a, int b);
+
+int main() {
+   cout << "Automatically verifying...";
+   assert(recGCD(2520, 476) == 28);
+   cout << "recGCD looks good!\n";
+   assert(recGCD(2520, 476) == 28);
+   cout << "iterGCD looks good!\n";
+
+
+   int a, b;
+   cout << "Enter a and b (Negative numbers will be made positive): ";
+   cin >> a >> b;
+
+   // Take absolutes.
+   if (a < 0)
+      a = -a;
+   if (b < 0)
+      b = -b;
+
+   cout << "GCD by iter is " << iterGCD(a, b) << endl;
+   cout << "GCD by rec is " << recGCD(a, b) << endl;
+}
+
+
+int recGCD(int a, int b) {
+   int r = a % b;
+   if (r == 0 || recGCD(b, r) == 0)  // Base
+      return r;
+   else  // Inductive
+      return recGCD(b, r);
+}
+
+int iterGCD(int a, int b) {
+   int lastR, r = 1;
+   while (r != 0) {
+      lastR = r;
+      r     = a % b;
+      a     = b;
+      b     = r;
+   }
+   return lastR;
+}

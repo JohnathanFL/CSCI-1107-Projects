@@ -1,0 +1,15 @@
+/home/oakenbow/Dev/Projects/CSCI-1107-Projects/build/CMakeFiles/rebuild_cache.dir
+/home/oakenbow/Dev/Projects/CSCI-1107-Projects/build/CMakeFiles/Lab-8.dir
+/home/oakenbow/Dev/Projects/CSCI-1107-Projects/build/CMakeFiles/Lab-7.dir
+/home/oakenbow/Dev/Projects/CSCI-1107-Projects/build/CMakeFiles/Lab-6-Prob2.dir
+/home/oakenbow/Dev/Projects/CSCI-1107-Projects/build/CMakeFiles/Lab-6.dir
+/home/oakenbow/Dev/Projects/CSCI-1107-Projects/build/CMakeFiles/Lab-5-Prob3.dir
+/home/oakenbow/Dev/Projects/CSCI-1107-Projects/build/CMakeFiles/edit_cache.dir
+/home/oakenbow/Dev/Projects/CSCI-1107-Projects/build/CMakeFiles/Lab-5.dir
+/home/oakenbow/Dev/Projects/CSCI-1107-Projects/build/CMakeFiles/Lab-10.dir
+/home/oakenbow/Dev/Projects/CSCI-1107-Projects/build/CMakeFiles/Lab-12.dir
+/home/oakenbow/Dev/Projects/CSCI-1107-Projects/build/CMakeFiles/Lab-11.dir
+/home/oakenbow/Dev/Projects/CSCI-1107-Projects/build/CMakeFiles/Lab-4.dir
+/home/oakenbow/Dev/Projects/CSCI-1107-Projects/build/CMakeFiles/Lab-13.dir
+/home/oakenbow/Dev/Projects/CSCI-1107-Projects/build/CMakeFiles/Project-2.2.dir
+/home/oakenbow/Dev/Projects/CSCI-1107-Projects/build/CMakeFiles/Lab-14.dir

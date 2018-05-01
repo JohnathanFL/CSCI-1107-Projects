@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/oakenbow/Dev/Projects/CSCI-1107-Projects/Source/Lab-7/complex driver.cpp
+complex.h
+/home/oakenbow/Dev/Projects/CSCI-1107-Projects/Source/Lab-7/complex.h
+iostream
+-
+
+/home/oakenbow/Dev/Projects/CSCI-1107-Projects/Source/Lab-7/complex.cpp
+complex.h
+/home/oakenbow/Dev/Projects/CSCI-1107-Projects/Source/Lab-7/complex.h
+
+/home/oakenbow/Dev/Projects/CSCI-1107-Projects/Source/Lab-7/complex.h
+cmath
+-
+iostream
+-
+

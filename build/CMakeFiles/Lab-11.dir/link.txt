@@ -1,0 +1,1 @@
+/usr/bin/g++  -g   CMakeFiles/Lab-11.dir/Source/Lab-11/Project8-1.cpp.o CMakeFiles/Lab-11.dir/Source/Lab-11/rectester.cpp.o  -o Lab-11 
