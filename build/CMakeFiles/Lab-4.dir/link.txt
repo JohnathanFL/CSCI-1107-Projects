@@ -1,1 +1,0 @@
-/usr/bin/g++  -g   CMakeFiles/Lab-4.dir/Source/Lab-4/Rock.cpp.o CMakeFiles/Lab-4.dir/Source/Lab-4/geology.cpp.o  -o Lab-4 

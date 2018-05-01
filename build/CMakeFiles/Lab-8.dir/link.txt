@@ -1,1 +1,0 @@
-/usr/bin/g++  -g   CMakeFiles/Lab-8.dir/Source/Lab-8/LinkedList.cpp.o CMakeFiles/Lab-8.dir/Source/Lab-8/linktester.cpp.o  -o Lab-8 

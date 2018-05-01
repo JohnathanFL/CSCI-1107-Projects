@@ -1,1 +1,0 @@
-/usr/bin/g++  -g   CMakeFiles/Lab-5-Prob3.dir/Source/Lab-5-Prob3/Lab5-Prob3.cpp.o  -o Lab-5-Prob3 

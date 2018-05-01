@@ -1,1 +1,0 @@
-/usr/bin/g++  -g   CMakeFiles/Lab-6.dir/Source/Lab-6/Project4-1.cpp.o CMakeFiles/Lab-6.dir/Source/Lab-6/Rock.cpp.o CMakeFiles/Lab-6.dir/Source/Lab-6/rocktester.cpp.o  -o Lab-6 

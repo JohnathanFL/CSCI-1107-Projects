@@ -1,1 +1,0 @@
-/usr/bin/g++  -g   CMakeFiles/Lab-7.dir/Source/Lab-7/complex_driver.cpp.o CMakeFiles/Lab-7.dir/Source/Lab-7/complex.cpp.o  -o Lab-7 

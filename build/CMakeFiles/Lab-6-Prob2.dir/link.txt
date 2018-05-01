@@ -1,1 +1,0 @@
-/usr/bin/g++  -g   CMakeFiles/Lab-6-Prob2.dir/Source/Lab-6-Prob2/Lab6-Prob2.cpp.o CMakeFiles/Lab-6-Prob2.dir/Source/Lab-6-Prob2/RationalNumber.cpp.o  -o Lab-6-Prob2 

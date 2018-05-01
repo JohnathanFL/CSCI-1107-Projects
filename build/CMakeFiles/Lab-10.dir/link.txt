@@ -1,1 +1,0 @@
-/usr/bin/g++  -g   CMakeFiles/Lab-10.dir/Source/Lab-10/circq.cpp.o CMakeFiles/Lab-10.dir/Source/Lab-10/circqtester.cpp.o  -o Lab-10 
