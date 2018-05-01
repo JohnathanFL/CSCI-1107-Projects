@@ -1,63 +1,73 @@
 #ifndef TOKEN_H
 #define TOKEN_H
 
-
 #include <string>
 
 #include "circq.h"
 
 // Made into a template for greater reuse.
 class Token {
-  public:
-   Token(const string& tok, int initialLine) {
-      token = tok;
-      lineNumbers.enqueue(initialLine);
-   }
-   Token(const Token& tok) {
-      token       = tok.token;
-      lineNumbers = tok.lineNumbers;
-   }
-   ~Token() {
-      token.~string();
-      lineNumbers.~CircularQ();
-   }
+public:
+  /// \brief Explicit constructor
+  /// \param tok The token to use
+  /// \param initialLine The line that will be first in lineNumbers.
+  /// \note Do not use as implicit constructor. This is just to make the
+  /// compiler happy.
+  Token(const string &tok = "", unsigned initialLine = -1);
 
-   void addLine(int num) {
-      lineNumbers.enqueue(num);
-   }
+  /// \brief Copy constructor
+  /// \param tok The Token to copy from.
+  Token(const Token &tok);
 
-   void display(ostream& out) const {
-      out << "( " << token << " on lines " << lineNumbers << " )";
-   }
+  /// \brief Assignment operator for token
+  /// \param rhs The token to assign from.
+  /// \returns a reference to *this;
+  Token &operator=(const Token &rhs);
 
-   Token operator+(Token rhs) {
-      Token newToken = *this;
-      while (!rhs.lineNumbers.empty()) {
-         newToken.lineNumbers.enqueue(rhs.lineNumbers.front());
-         rhs.lineNumbers.dequeue();
-      }
-      return newToken;
-   }
-   bool operator<(const Token& rhs) const {
-      return this->token < rhs.token;
-   }
-   bool operator>(const Token& rhs) const {
-      return this->token > rhs.token;
-   }
+  /// \brief Print *this to an ostream
+  /// \param out The ostream to write to.
+  /// \post *this has been written to out in the following format:
+  /// (##TOKEN## on lines ##EACH LINE NUMBER##)
+  /// \note See CircularQ->display for each line number.
+  void display(ostream &out) const;
 
-   const string& getToken() const {
-      return token;
-   }
+  /// \brief Concatenate the line numbers in this Token with those of another.
+  /// \param rhs The token to take numbers from.
+  /// \returns A token containing all the line numbers from *this, followed by
+  /// all the line numbers from rhs.
+  /// \note Pass by value to avoid making another temp variable.
+  Token operator+(Token rhs);
 
-  private:
-   string         token;
-   CircularQ<int> lineNumbers;
+  /// \brief Less than operator
+  /// \param rhs Other token to compare
+  /// \returns Whether this->token < rhs.token.
+  bool operator<(const Token &rhs) const;
+
+  /// \brief Greater than operator
+  /// \param rhs Other token to compare
+  /// \returns Whether this->token > rhs.token.
+  bool operator>(const Token &rhs) const;
+
+
+  /// \brief Equality operator
+  /// \param rhs Other token to compare
+  /// \returns Whether this->token == rhs.token.
+  bool operator==(const Token& rhs) const;
+
+  /// \brief Gets the token from this instance.
+  /// \returns A const ref to the token.
+  /// \note const ref to avoid copying large strings.
+  const string &getToken() const;
+
+private:
+  string token;                    ///>! The token we have.
+  CircularQ<unsigned> lineNumbers; ///>! All lines this token was found on.
 };
 
-
-ostream& operator<<(ostream& out, const Token& t) {
-   t.display(out);
-   return out;
-}
+/// \brief Stream insertion operator for Token
+/// \param out The stream to write to
+/// \param t The token to display
+/// \post t.display has been called on out.
+ostream &operator<<(ostream &out, const Token &t);
 
 #endif
